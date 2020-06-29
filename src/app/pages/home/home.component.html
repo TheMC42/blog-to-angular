@@ -1,0 +1,40 @@
+<section id="content-principal">
+  <div class="content-principal__main">
+    <article *ngFor="let articulo of infoPageService.articulos.reverse()" class="content-principal__articulo">
+      <img src="{{ articulo.url}}">
+      <h2>{{ articulo.titulo}}</h2>
+      <h5><i class="far fa-calendar-alt"></i> &nbsp; {{articulo.fecha}}</h5>
+      <p>{{articulo.contenido}}</p>
+      <div class="content-principal__articulo-link">
+        <a target="_blank" href="#"><i class="fas fa-angle-double-right"></i> Leer mas</a>
+      </div>
+    </article>
+  </div>
+  <div class="content-principal__side">
+    <div class="content-principal__side-border">
+      <h2 class="content-principal__titulo-sidebar">recientes</h2>
+      <a href="#">
+        <div class="content-principal__elemento">
+          <img src="assets/images/photo.jpg">
+          <h2>titulo sidebar h2</h2>
+          <h5><i class="far fa-calendar-alt"></i> Title description, Sep 2, 2017</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dicta eos harum.
+            Repellat
+            doloribus accusantium tempore numquam, eaque praesentium esse harum dicta fuga magni
+            consectetur
+            non ut nobis voluptate animi!</p>
+        </div>
+      </a>
+      <div class="content-principal__elemento">
+        <img src="assets/images/photo.jpg">
+        <h2>titulo sidebar h2</h2>
+        <h5><i class="far fa-calendar-alt"></i> Title description, Sep 2, 2017</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dicta eos harum. Repellat
+          doloribus accusantium tempore numquam, eaque praesentium esse harum dicta fuga magni
+          consectetur
+          non ut nobis voluptate animi!</p>
+      </div>
+
+    </div>
+  </div>
+</section>
